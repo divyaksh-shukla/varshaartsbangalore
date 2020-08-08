@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=deive-width, initial-scale=1">
+	<title>Varsha Arts</title>
+	<link rel="icon" href="ganesh.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-teal w3-card-2">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" onclick="myFunction()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a href="index.html" class="w3-bar-item">
+				<img src="logo_white_small_3.png" style="height: 31px" alt="VARSHA ARTS">
+			</a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">HOME</a>
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">ABOUT</a>
+			<a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">GALLERY</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-hover-white">CONTACT</a>
+		</div>
+	</div>
+
+	<!--Navbar for mobiles-->
+	<div id="mobileNavigation" class="w3-teal w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 46px">
+		<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">HOME</a>
+		<a class="w3-bar-item w3-button w3-padding-large w3-hover-white">ABOUT</a>
+		<a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hover-white">GALLERY</a>
+		<a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">CONTACT</a>
+	</div>
+
+	<div class="w3-container" style="margin-top: 60px;">
+		<div class="w3-row">
+			<h2>Announcements</h2>
+			<div id="announcement-card" class="w3-khaki w3-card w3-padding-large w3-margin-bottom ">
+				<h3 style="font-weight: 500 ">Classes for Art and Design Portfolios</h3>
+				<p>New session of Varsha Arts Classes are starting from 8th June for 9th to 12th Std. Stduents of ICSE/CBSE/IB. It helps
+					students to develop drawing, painting, colouring modern skills. Also provide right guidences for preparing Arts and
+					Design Portfolios for their professional career.</p>
+			</div>
+			<div id="announcement-card" class="w3-khaki w3-card w3-padding-large w3-margin-bottom ">
+				<h3 style="font-weight: 500 ">NEW SESSION: 8-06-2018</h3>
+				<p>New session starts from 8th June,2018. All previous compensate classes are lapsed. Revised fees structure will be conveyed
+					by Varsha</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="row w3-teal w3-container">
+			<h5>Follow us on popular Social Media</h5>
+			<a href="https://www.facebook.com/varshaartsbangalore">
+				<i class="fa fa-facebook-official" style="font-size:45px;"></i>
+			</a>
+			<a href="https://plus.google.com/102844433378167644686">
+				<i class="fa fa-google-plus-official" style="font-size:45px;"></i>
+			</a>
+			<p class="w3-right">Created using W3CSS</p>
+		</div>
+	</footer>
+
+	<script>
+		function myFunction() {
+			// Toggle menu on small screens
+			var x = document.getElementById("mobileNavigation");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			}
+			else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+
+		var width = document.documentElement.clientWidth;
+		var height = document.documentElement.clientHeight;
+
+		if (width < 600) {
+			var card = document.getElementById("card");
+			card.className += " w3-margin-bottom"
+		}
+		else {
+			var card = document.getElementById("card");
+			card.className += " w3-margin-right"
+		}
+
+		var onresize = function (event) {
+			width = event.target.outerWidth;
+			height = event.target.outerHeight;
+
+			if (width < 600) {
+				var card = document.getElementById("card");
+				card.className = card.className.replace(" w3-margin-right", " w3-margin-bottom");
+			}
+			else {
+				var card = document.getElementById("card");
+				card.className = card.className.replace(" w3-margin-bottom", " w3-margin-right");
+			}
+		}
+		window.addEventListener("resize", onresize);
+	</script>
+
+</body>
+
+</html>

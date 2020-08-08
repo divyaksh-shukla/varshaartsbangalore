@@ -1,0 +1,207 @@
+.footer-bubble {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*Navigation bar decoration*/
+#navbutton > a:hover {
+    background-color: azure;
+    color: #000;
+}
+
+body {
+  display: grid;
+  background-color: azure;
+}
+
+.w3-blue {
+  background-color: #091772 !important;
+}
+
+.webpage {
+  margin-top: 60px;
+  padding: 0px 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-columns: minmax(auto, 400px);
+  justify-self: center;
+  grid-template-areas:
+  'ganeshLogo               varshaLogo                varshaLogo'
+  'subscriptionAnnouncement subscriptionAnnouncement  subscriptionAnnouncement'
+  'about                    about                     about'
+  'courses                  courses                   courses'
+  'portfolio                portfolio                 portfolio'
+  'gallery                  gallery                   gallery'
+  'contact                  contact                   contact'
+  'contactInfo              contactInfo               contactInfo'
+  'googleMap                googleMap                 googleMap';
+}
+
+.webpage .ganesh-logo {
+  grid-area: ganeshLogo;
+}
+
+.webpage .ganesh-logo img {
+  max-height: 450px;
+  /* width: 100%; */
+  /* max-width: 329px; */
+  /* width: 60%; */
+
+}
+
+.webpage .varsha-logo {
+  grid-area: varshaLogo;
+  display: grid;
+}
+
+.webpage .varsha-logo img {
+  max-height: 450px;
+  /* width: 50%; */
+  align-self: center;
+  justify-self: center;
+}
+
+.webpage .announcement {
+  padding: 0px 10px;
+  grid-area: announcement;
+}
+
+.webpage .subscription {
+  grid-area: subscription;
+}
+
+.webpage .subscription div {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas: 
+  'subscribe_name subscribe_name'
+  'subscribe_email subscribe_email'
+  'button button';
+}
+
+.webpage .subscription #subscribe_name {
+  grid-area: subscribe_name;
+}
+
+.webpage .subscription #subscribe_email {
+  grid-area: subscribe_email;
+}
+
+.webpage .subscription > a {
+  grid-area: button;
+  align-content: center;
+}
+
+.webpage .announcement-and-subscription {
+  display: grid;
+  grid-gap: inherit;
+  grid-area: subscriptionAnnouncement;
+  grid-template-areas: 
+  'announcement'
+  'subscription';
+}
+
+.webpage #about {
+  grid-area: about;
+}
+
+.webpage #courses {
+  grid-area: courses;
+}
+
+.webpage #portfolio {
+  grid-area: portfolio;
+}
+
+.webpage #gallery {
+  grid-area: gallery;
+}
+
+.webpage #gallery img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.webpage #gallery div {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  'a'
+  'b'
+  'c'
+  'button';
+}
+
+.webpage #contact {
+  grid-area: contact;
+}
+.webpage #contact-info {
+  grid-area: contactInfo;
+}
+.webpage #googleMap {
+  grid-area: googleMap;
+  /* align-self: flex-start; */
+}
+
+.footer i {
+  font-size:45px;
+  color: white;
+}
+
+/* For tablet */
+
+@media screen and (min-width: 480px) and (max-width: 1025px) {
+  .webpage {
+    margin-top: 60px;
+    display: grid;
+    grid-gap: 10px;
+    justify-self: center;
+    width: 80%;
+    grid-template-areas: 
+    'ganeshLogo               varshaLogo                varshaLogo                varshaLogo                varshaLogo'
+    'subscriptionAnnouncement subscriptionAnnouncement  subscriptionAnnouncement  subscriptionAnnouncement  subscriptionAnnouncement'
+    'about          about           courses       courses     courses'
+    'portfolio      portfolio       courses       courses     courses'
+    'gallery        gallery         gallery       gallery     gallery'
+    'contact        contact         contact       contact     contact'
+    'contactInfo    googleMap       googleMap     googleMap   googleMap';
+  }
+  .webpage #gallery div {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'a c'
+    'b c'
+    'button button';
+  }
+}
+
+
+/* For desktop */
+
+@media screen and (min-width: 1025px) {
+  .webpage {
+    margin-top: 60px;
+    display: grid;
+    grid-gap: 10px;
+    justify-self: center;
+    width: 70%;
+    grid-template-areas: 
+    'ganeshLogo     varshaLogo      varshaLogo    varshaLogo  varshaLogo  subscriptionAnnouncement'
+    'about          about           courses       courses     courses     courses'
+    'portfolio      portfolio       courses       courses     courses     courses'
+    'portfolio      portfolio       gallery       gallery     gallery     gallery'
+    'contact        contact         contact       contact     contact     contact'
+    'contactInfo    googleMap       googleMap     googleMap   googleMap   googleMap';
+  }
+  .webpage #gallery div {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'a c'
+    'b c'
+    'button button';
+  }
+}

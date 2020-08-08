@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Meta Tags for OpenGraph Protocol -->
+<meta property="og:title" content="Varsha Arts" />
+<meta property="og:description" content="Sketch Your Own World" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://varshaartsbangalore.in/ganesh_small.jpg" />
+<!-- <meta property="og:url" content="http://varshaartsbangalore.in/" />
+<meta property="og:url" content="http://varshaartsbangalore.in" /> -->
+<meta property="og:url" content="http://www.varshaartsbangalore.in" />
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- JQuery from Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=deive-width, initial-scale=1">
+	<title>Varsha Arts</title>
+	<!-- <link rel="icon" href="ganesh.ico" type="image/x-icon"> -->
+	<link rel="icon" href="ganesh.ico" type="image/x-icon">
+
+	<meta property="og:title" content="Varsha Arts" />
+	<meta property="og:description" content="Sketch Your Own World" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://varshaartsbangalore.in/ganesh_small.jpg" />
+	<!-- <meta property="og:url" content="http://varshaartsbangalore.in/" />
+<meta property="og:url" content="http://varshaartsbangalore.in" /> -->
+	<meta property="og:url" content="http://www.varshaartsbangalore.in" />
+</head>
+
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-blue w3-card-2">
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+			 onclick="myFunction()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a href="#home" class="w3-bar-item">
+				<img src="painting_9_white.svg" style="height: 31px" alt="VARSHA ARTS">
+			</a>
+			<a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white" style="text-decoration: none;">HOME</a>
+			<a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white" style="text-decoration: none;">ABOUT</a>
+			<a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white" style="text-decoration: none;">GALLERY</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-hover-white" style="text-decoration: none;">CONTACT</a>
+		</div>
+	</div>
+
+	<!--Navbar for mobiles-->
+	<div id="mobileNavigation" class="w3-blue w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 46px">
+		<a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-white" style="text-decoration: none;">HOME</a>
+		<a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" style=" text-decoration: none; ">ABOUT</a>
+		<a href="#gallery " class="w3-bar-item w3-button w3-padding-large w3-hover-white " style="text-decoration: none; ">GALLERY</a>
+		<a href="#contact " class="w3-bar-item w3-button w3-padding-large w3-hover-white " style="text-decoration: none; ">CONTACT</a>
+	</div>
+
+	<div class="webpage">
+		<!-- <div class="col-l-1">
+
+		</div> -->
+		<div class="ganesh-logo">
+			<img src="ganesh_small.jpg" alt="Varsha Arts" align="right">
+		</div>
+		<div class="varsha-logo">
+				<img src="painting_9.svg" alt="Varsha Arts" class="w3-image">
+		</div>
+		<div class="announcement-and-subscription">
+			<div class="announcement w3-khaki">
+				<h1>Announcements</h1>
+				<h5 style="font-weight: 500 ">Zoom Online classes</h5>
+				<p>Join Varsha Arts online zoom classes NOW!</p>
+			</div>
+
+			<div class="subscription">
+				<div class="w3-card w3-blue w3-padding-large">
+					<!-- <form action="subscribe.php" method="post"> -->
+					<!-- <h2>Subscribe to news</h2> -->
+					<input type="text" name="name" id="subscribe_name" placeholder="Name" style="margin-bottom:5px;" />
+					<input type="email" name="email" id="subscribe_email" placeholder="Email" />
+					<a href="javascript:void(0)" type="button" class="w3-yellow w3-margin-top w3-button w3-ripple" onclick="subscribe()">Subscribe
+						To newsletter</a>
+					<a href="javascript:void(0)" type="button" class="w3-yellow w3-margin-top w3-button w3-ripple" onclick="unsubscribe()">Unsubscribe</a>
+					<!-- </form> -->
+				</div>
+
+			</div>
+		</div>
+
+		<div id="about">
+			<div id="card" class="w3-card w3-padding-large w3-yellow ">
+				<h2>About: The Founder</h2>
+				<p>Dr. Varsha Shukla M.A Ph.D (Drawing and Painting) started her professional career as an artist during her research period, where she participated in many
+					workshops and shows. She met and saw the works of many international and national renowned artists and got encouraged by
+					them. This helped her in evolving her art and creativity to a professional level. For more than 20 years (after Ph.D.),
+					Varsha has gone through many such dimensions as an artist to gain profound insight to bringing a piece of art to life, an
+					idea to canvas.</p>
+				<a href="about.html" class="w3-block w3-button w3-blue ">Continue...</a>
+			</div>
+		</div>
+
+		<div id="courses">
+			<div id="card " class="w3-card w3-padding-large w3-lime">
+				<h2>Courses Offered</h2>
+				<p><b>Level 1:(Beginner) - Upto 2nd Standard</b><br>Aim is to nurture a love for art that touches the hearts and souls.</p>
+
+				<p><b>Level 2:(Basic) - 3rd & 4th Standards</b><br>To teach proper use of brushes , colour mixing using water colour, acrylic and
+					pastels.</p>
+
+				<p><b>Level 3:(Intermediate I) - 5th & 6th Standards</b><br>To express themselves and explain their ideas to others.</p>
+
+				<p><b>Level 4:(Intermediate II) - 7th & 8th Standards</b><br>Learn various modern drawing and painting techniques.</p>
+
+				<p><b>Level 5:(Higher) - 9th & 10th Standards</b><br>To increase observation skills and challenge you to work in a variety of media. Draw
+					from life or imgination. Discuss about the techiniques from old master's works like Picasso and Seurat.</p>
+
+				<p><b>Level 6:(Professional) - 11th & 12th Standards</b><br>Design school preparation. Portfolio presentation and rendering techniques.</p>
+				<a href="#contact " class="w3-button w3-block w3-blue ">CONTACT</a>
+			</div>
+		</div>
+
+		<div id="portfolio">
+			<div id="card " class="w3-card w3-padding-large w3-yellow">
+				<h2>Portfolio Art and Design</h2>
+				<p>Art and Design, a new and Vibrant Career these days. It gives you a freedom to demonstrate your skills, ideas, Creativity, Personality, Ability and Commitments toward your works, goals and targets.
+					To start your professional career in Art and Design, you have to meet an academic requirement for Art and Design Schools, Universities and Colleges. Typically, you require a practical "ART & DESIGN PORTFOLIO" as part of the admission process, which help them to evaluate your Visual Art Potential.
+					Just as every art student is different, every art school has different requirements and expectations. This variation of expectations can leave students to uncertain, about how to proceed. Even when criteria is clear, student may feel overwhelmed and wonder, what to draw/paint/make/create, which medium to use and how to select best and present his/her work.
+				</p></p>In "Varsha Art", DR. Varsha (MA, Ph.D in Drawing) has an innovative mind and a creative heart. She helps to remake the world and visualize your ideas with a dazzling display of creativity. With an exuberant imagination, she invents concepts, ideas, and helps to convert into realism, which simply fascinate others. Along with, you will also expose to all modern techniques, medium etc.
+					INTERESTED? Join Now. You need an enough time to complete your ART and DESIGN Portfolio. you have to complete 30 (or more) art products to finish. Then select best art pieces, which to paste/present/attach as your own "ART & DESIGN PORTFOLIO".</p>
+				<a href="about.html" class="w3-btn w3-block w3-ripple" style="background-color:#3B5998;color:white">Continue
+					Reading...
+					<i class="fa fa-facebook-square "></i></a>
+			</div>
+		</div>
+		<div id="gallery">
+			<div id="card " class="w3-card w3-padding-large w3-lime">
+				<img src="./assets/img/DSC_0882_3.JPG" style="grid-area: a;" />
+				<img src="./assets/img/DSC_1217_1.JPG" style="grid-area: b;"/>
+				<img src="./assets/img/IMG_20200704_104715_1.jpg" style="grid-area: c;"/>
+				<a href="#gallery " class="w3-button w3-block w3-blue " style="grid-area: button;">GALLERY</a>
+			</div>
+		</div>
+
+		<div id="contact" class="w3-blue w3-padding-small">
+			<h1>Contact</h1>
+		</div>
+		<div id="contact-info">
+			<div class="w3-indigo">
+				<h2 class=" w3-padding-large"><i class="material-icons">person</i> Dr. Varsha Shukla</h2>
+				<div class=" w3-padding-large">
+					<i class="fa fa-address-card" aria-hidden="true"></i>
+					#102 Vaswani Astoria Apartments,<br /> Kariyammana Agrahara, Kadubeesanahalli <br /> Outer Ring Road. 560103
+				</div>
+				<p class="w3-padding-large">
+					<i class="fa fa-phone" aria-hidden="true"></i> (+91)9886757433<br />
+					<i class="fa fa-envelope" aria-hidden="true"></i> varsha.art@gmail.com
+				</p>
+				<p class="w3-padding-large"><i class="material-icons">map</i> Look for "Varsha Arts" in Google maps</p>
+			</div>
+		</div>
+		<div id="googleMap"></div>
+		<script>
+			function myMap() {
+				var myCenter = new google.maps.LatLng(12.938603, 77.6875558)
+				var mapProp = {
+					center: myCenter,
+					zoom: 15,
+					scrollwheel: false
+				};
+				var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+				var marker = new google.maps.Marker({
+					position: myCenter,
+				});
+				marker.setMap(map);
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT_3aHafTcr1_YOrBbtf4M9MtIikRFkIA&callback=myMap"></script>
+
+	</div>
+
+	<!--FOOTER Area-->
+	<div class="w3-row-padding w3-blue w3-container footer">
+		<p>Find us on Social Media</p>
+		<a href="https://www.facebook.com/varshaartsbangalore">
+			<i class="fa fa-facebook-official" style="font-size:45px;"></i>
+		</a>
+		<a href="https://www.youtube.com/channel/UCLDsWTPugdj1Q8Q24zFnBTA">
+		<i class="fa fa-youtube-play" aria-hidden="true"></i>
+		</a>
+
+		<footer class="w3-right " style="margin-top: 15px ">Created using W3CSS</footer>
+	</div>
+	</div>
+
+
+	<script>
+		function myFunction() {
+			// Toggle menu on small screens
+			var x = document.getElementById("mobileNavigation");
+			if (x.className.indexOf("w3-show ") == -1) {
+				x.className += " w3-show ";
+			}
+			else {
+				x.className = x.className.replace(" w3-show ", " ");
+			}
+		}
+
+		function subscribe() {
+			console.log('Subscribe is called...');
+			$.post("subscribe.php",
+				{
+					"name": $('#subscribe_name').val(),
+					"email": $('#subscribe_email').val()
+				},
+				function (data, status) {
+					if (status == "success") {
+						document.getElementById('subscription-modal-box').style.display = 'block';
+						$('#subscription-modal-box > div > div > p').text('Successfully subscribed');
+					}
+					else {
+						document.getElementById('subscription-modal-box').style.display = 'block';
+						$('#subscription-modal-box > div > div > p').text('There was an error in subscribing. Please try again');
+					}
+				}
+			);
+		}
+
+		function unsubscribe() {
+			console.log('Unsubscribe is called...');
+			$.post("unsubscribe.php",
+				{
+					"name": $('#subscribe_name').val(),
+					"email": $('#subscribe_email').val()
+				},
+				function (data, status) {
+					if (data == "success") {
+						document.getElementById('subscription-modal-box').style.display = 'block';
+						$('#subscription-modal-box > div > div').append('<p>Unsuccessfully UNSUBSCRIBED</p>');
+					}
+					else {
+						document.getElementById('subscription-modal-box').style.display = 'block';
+						$('#subscription-modal-box > div > div').append('<p>This email is not present in the subscription list</p>');
+					}
+				}
+			);
+		}
+
+		function galleryPictures() {
+			var descr = $.getJson()
+		}
+
+	</script>
+</body>
+
+</html>
